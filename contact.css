@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: poppins;
+    
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(5, 0, 18);
+    color: rgb(244, 244, 244);
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    left: 0;
+    padding: 2rem 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(15, 0, 44);
+    height: 12vh;
+}
+.navbar.sticky{
+    background-color: black;
+}
+
+.name{
+    display: flex;
+}
+
+.name h2{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: 3rem;
+}
+
+.name img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100%;
+    margin-top: 1.5rem;
+    transition: 1s;
+    margin-bottom: 1.5rem;
+}
+
+
+.options{
+    font-size: 1.7rem;
+    color: rgb(16, 0, 136);
+    font-weight: 500;
+    display: flex;
+    margin-left: 3.5rem;
+    transition: 1s;
+
+}
+
+a{
+    color:rgb(255, 255, 255);
+    transition: .5s;
+    padding: 1.5rem;
+}
+
+.options a:hover,
+.options a:active{
+    color:rgb(153, 153, 255);
+}
+
+.options>a{
+    padding: 20px;
+}
+
+hr{
+    border: 0;
+    border-radius: 25%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: 1px;
+    border-color: rgb(134, 34, 228);
+    background-color: rgba(137, 43, 226, 0.419);
+}
+
+
+.main{
+    height: 75vh;
+    text-align: center;
+    margin-top: 9rem;
+    padding-top: 5rem;
+    font-size: 5rem;
+}
+
+
+.contact-details{
+    padding: 5rem;
+    border-radius: 1px solid rgb(31, 0, 31);
+    font-size: 3rem;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background:rgb(1, 0, 40);
+}
+
+.footer-text,
+.footer-iconTop {
+    position: relative;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.footer-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: blue;
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconTop a:hover::before {
+    width: 100%;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: rgb(218, 218, 218);
+    transition: .5s;
+}
+
+.footer-iconTop a:hover i {
+    color: rgb(255, 255, 255);
+}
